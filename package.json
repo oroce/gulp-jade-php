@@ -1,0 +1,33 @@
+{
+  "name": "gulp-jade-php",
+  "version": "1.0.0",
+  "description": "compile jade php",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oroce/gulp-jade-php.git"
+  },
+  "keywords": [
+    "jade",
+    "php",
+    "gulp"
+  ],
+  "author": "oroce <robert@oroszi.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oroce/gulp-jade-php/issues"
+  },
+  "homepage": "https://github.com/oroce/gulp-jade-php",
+  "dependencies": {
+    "gulp-util": "^3.0.0",
+    "jade": "^1.5.0",
+    "jade-php": "^0.1.1",
+    "through2": "^0.5.1"
+  },
+  "devDependencies": {
+    "tap": "^0.4.12"
+  }
+}
