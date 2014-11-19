@@ -7,5 +7,5 @@ html
         
         ul.active(id='ul-list', data!=$interlaced)
             - foreach ($this->list as $list):
-                li!= $list
+                li.foo(class="bar")!= $list
             - endforeach

@@ -5,7 +5,7 @@
   </head>
   <body>
     <ul id="ul-list" data="<?php echo $interlaced; ?>" class="active"><?php foreach ($this->list as $list): ?>
-      <li><?php echo $list; ?></li><?php endforeach ?>
+      <li class="foo bar"><?php echo $list; ?></li><?php endforeach ?>
     </ul>
   </body>
 </html>
