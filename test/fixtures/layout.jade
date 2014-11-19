@@ -6,5 +6,5 @@ html
     body
         ul
             - foreach ($this->list as $list):
-                li!= $list
+                li.foo(class="bar")!= $list
             - endforeach
