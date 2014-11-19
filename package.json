@@ -1,6 +1,6 @@
 {
   "name": "gulp-jade-php",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "compile jade php",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/oroce/gulp-jade-php",
   "dependencies": {
     "gulp-util": "^3.0.0",
-    "jade": "^1.5.0",
+    "jade": "^0.35.0",
     "jade-php": "^0.1.2",
     "through2": "^0.5.1"
   },
