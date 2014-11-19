@@ -1,6 +1,6 @@
 {
   "name": "gulp-jade-php",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "description": "compile jade php",
   "main": "index.js",
   "scripts": {
