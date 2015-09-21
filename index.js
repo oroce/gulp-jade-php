@@ -2,19 +2,12 @@
 
 var through = require('through2');
 var jade = require('jade');
-var jadePhp = require('jade-php');
-var ext = require('gulp-util').replaceExtension;
+var jadePhp = require('phpjade');
+var handleExtension = require('./ext');
+var handleCompile = require('./compile');
 var PluginError = require('gulp-util').PluginError;
 
-jadePhp(jade);
-
-function handleCompile(contents, opts){
-  return jade.compile(contents, opts)(opts.locals || opts.data);
-}
-
-function handleExtension(filepath, opts) {
-  return ext(filepath, opts.extension || '.php');
-}
+jadePhp.init(jade);
 
 module.exports = function(options) {
   var opts = options || {};
