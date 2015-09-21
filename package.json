@@ -4,7 +4,8 @@
   "description": "compile jade php",
   "main": "index.js",
   "scripts": {
-    "test": "tap ./test"
+    "test": "tap *.spec.js",
+    "test-watch": "fswatch -r . | xargs -I{} npm test"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,11 @@
   "dependencies": {
     "gulp-util": "^3.0.0",
     "jade": "^1.7.0",
-    "jade-php": "0.1.1",
+    "phpjade": "^1.4.1",
     "through2": "^0.5.1"
   },
   "devDependencies": {
+    "proxyquire": "^1.7.2",
     "tap": "^0.4.12"
   }
 }
