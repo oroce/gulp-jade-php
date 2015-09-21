@@ -1,8 +1,12 @@
 var gulp = require('gulp');
 var jadePhp = require('..');
-gulp.task('default', function() {
+var changed = require('gulp-changed');
+gulp.task('compile', function() {
   // place code for your default task here
-  gulp.src('*.jade')
+  return gulp.src('*.jade')
+    .pipe(changed('./', {
+      extension: '.php'
+    }))
     .pipe(jadePhp({
       pretty: true,
       locals: {
@@ -10,4 +14,8 @@ gulp.task('default', function() {
       }
     }))
     .pipe(gulp.dest('./'));
+});
+
+gulp.task('default', function() {
+  return gulp.watch('*.jade', {}, ['compile']);
 });
