@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    meta(name="description",content=poweredBy)
+    title= $title
+  body
+    ul
+      - foreach ($this->list as $list):
+        li.foo(class="bar")!= $list
+      - endforeach
